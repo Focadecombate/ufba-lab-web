@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Calculadora de IMC</h1>
+    <form id="imcForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required /><br />
+
+      <label for="altura">Altura (cm):</label>
+      <input type="number" id="altura" name="altura" required /><br />
+
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" name="peso" required /><br />
+
+      <input type="submit" value="Calcular" />
+    </form>
+
+    <div id="resultado"></div>
+
+    <h2>Classificações de IMC</h2>
+    <table>
+      <tr>
+        <th>Classificação</th>
+        <th>IMC</th>
+        <th>Risco de comorbidade</th>
+      </tr>
+      <tr>
+        <td>Abaixo do peso</td>
+        <td>Menos de 18,5</td>
+        <td>Baixo</td>
+      </tr>
+      <tr>
+        <td>Peso normal</td>
+        <td>18,5 - 24,9</td>
+        <td>Médio</td>
+      </tr>
+      <tr>
+        <td>Pré-obeso</td>
+        <td>25,0 - 29,9</td>
+        <td>Aumentado</td>
+      </tr>
+      <tr>
+        <td>Obeso 1</td>
+        <td>30,0 ou 34,9</td>
+        <td>Moderado</td>
+      </tr>
+      <tr>
+        <td>Obeso 2</td>
+        <td>35,0 ou 39,9</td>
+        <td>Grave</td>
+      </tr>
+      <tr>
+        <td>Obeso 3</td>
+        <td>>=40,0</td>
+        <td>Muito grave</td>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
